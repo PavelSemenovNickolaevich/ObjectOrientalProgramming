@@ -6,6 +6,10 @@ public class HardDrive extends ElectronicDevice {
     private int volume;
     private String department;
 
+    public HardDrive (String name) {
+        super(name);
+    }
+
     public void format(){
 
     }

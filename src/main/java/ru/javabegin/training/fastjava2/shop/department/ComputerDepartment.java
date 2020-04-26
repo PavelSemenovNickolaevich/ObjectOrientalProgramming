@@ -1,4 +1,4 @@
 package ru.javabegin.training.fastjava2.shop.department;
 
-public class ComputerDepartment extends BaseDepartment {
+public class ComputerDepartment extends AbstractDepartment {
 }

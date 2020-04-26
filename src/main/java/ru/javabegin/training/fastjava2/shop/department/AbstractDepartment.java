@@ -1,14 +1,12 @@
 package ru.javabegin.training.fastjava2.shop.department;
 
-import ru.javabegin.training.fastjava2.shop.goods.BaseGoods;
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
-import ru.javabegin.training.fastjava2.shop.service.BaseEmployee;
 
 import java.util.ArrayList;
 
-public abstract class BaseDepartment implements DepartmentInterface {
+public abstract class AbstractDepartment implements DepartmentInterface {
 
     private String name;
     private ArrayList<GoodsInterface> goodsList;

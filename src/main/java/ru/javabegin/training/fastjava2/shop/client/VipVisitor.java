@@ -1,8 +1,9 @@
 package ru.javabegin.training.fastjava2.shop.client;
 
-public class VipVisitor extends BaseVisitor {
+import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
-    private String name;
+public class VipVisitor extends AbstractVisitor {
+
     private float discount;
 
     public void getDiscount () {
@@ -10,9 +11,9 @@ public class VipVisitor extends BaseVisitor {
     }
 
     @Override
-    public void buy( ) {
+    public void buy(GoodsInterface goods) {
         if (!checkDiscount()) {
-            super.buy();
+            super.buy(goods);
         } else{
 
         }

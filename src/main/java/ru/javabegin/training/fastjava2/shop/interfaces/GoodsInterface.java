@@ -1,12 +1,12 @@
 package ru.javabegin.training.fastjava2.shop.interfaces;
 
-import ru.javabegin.training.fastjava2.shop.department.BaseDepartment;
+import ru.javabegin.training.fastjava2.shop.department.AbstractDepartment;
 
 public interface GoodsInterface {
-    BaseDepartment department();
-    String name();
-    String company();
-    double price();
+    AbstractDepartment getDepartment();
+    String getName();
+    String getCompany();
+    double getPrice();
     boolean hasGuarantee();
 
 }

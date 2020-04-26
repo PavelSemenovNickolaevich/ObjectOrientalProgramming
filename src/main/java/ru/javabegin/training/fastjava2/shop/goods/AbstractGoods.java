@@ -1,28 +1,39 @@
 package ru.javabegin.training.fastjava2.shop.goods;
 
-import ru.javabegin.training.fastjava2.shop.department.BaseDepartment;
+import ru.javabegin.training.fastjava2.shop.department.AbstractDepartment;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
-public abstract class BaseGoods implements GoodsInterface {
+public abstract class AbstractGoods implements GoodsInterface {
 
-    private BaseDepartment department;
+    private AbstractDepartment department;
     private String name;
     private String company;
     private double price;
     private boolean hasGuarantee;
 
-
-    @Override
-    public BaseDepartment department () {
-        return null;
+    public static  void  print(String message) {
+        System.out.println("message = " + message);
     }
 
-    public void setDepartment (BaseDepartment department) {
+    public AbstractGoods() {
+
+    }
+
+    public AbstractGoods(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public AbstractDepartment getDepartment () {
+        return department;
+    }
+
+    public void setDepartment (AbstractDepartment department) {
         this.department = department;
     }
 
     @Override
-    public String name () {
+    public String  getName () {
         return name;
     }
 
@@ -31,7 +42,7 @@ public abstract class BaseGoods implements GoodsInterface {
     }
 
     @Override
-    public String company () {
+    public String getCompany () {
         return company;
     }
 
@@ -40,7 +51,7 @@ public abstract class BaseGoods implements GoodsInterface {
     }
 
     @Override
-    public double price () {
+    public double getPrice () {
         return price;
     }
 
