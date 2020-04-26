@@ -2,7 +2,7 @@ package ru.javabegin.training.fastjava2.shop.client;
 
 import ru.javabegin.training.fastjava2.shop.interfaces.VisitorInterface;
 
-public class BaseVisitor implements VisitorInterface {
+public abstract  class BaseVisitor implements VisitorInterface {
 
     private String name;
 

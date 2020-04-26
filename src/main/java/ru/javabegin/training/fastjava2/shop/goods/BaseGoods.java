@@ -3,7 +3,7 @@ package ru.javabegin.training.fastjava2.shop.goods;
 import ru.javabegin.training.fastjava2.shop.department.BaseDepartment;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
 
-public class BaseGoods implements GoodsInterface {
+public abstract class BaseGoods implements GoodsInterface {
 
     private BaseDepartment department;
     private String name;

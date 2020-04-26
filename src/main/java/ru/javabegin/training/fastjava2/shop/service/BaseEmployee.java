@@ -4,7 +4,7 @@ import ru.javabegin.training.fastjava2.shop.department.BaseDepartment;
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
 
-public class BaseEmployee implements EmployeeInterface {
+public abstract class BaseEmployee implements EmployeeInterface {
     private String name;
     private DepartmentInterface department;
     private boolean free;
