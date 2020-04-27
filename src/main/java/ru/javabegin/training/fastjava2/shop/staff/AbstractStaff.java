@@ -8,6 +8,14 @@ public abstract class AbstractStaff implements EmployeeInterface {
     private DepartmentInterface department;
     private boolean free;
 
+    public AbstractStaff() {
+
+    }
+
+    public AbstractStaff(String name) {
+        this.name = name;
+    }
+
 
     public void setName (String name) {
         this.name = name;
@@ -19,6 +27,7 @@ public abstract class AbstractStaff implements EmployeeInterface {
     }
 
 
+    @Override
     public void setDepartment (DepartmentInterface department) {
         this.department = department;
     }

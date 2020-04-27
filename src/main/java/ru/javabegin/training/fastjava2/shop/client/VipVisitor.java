@@ -6,6 +6,10 @@ public class VipVisitor extends AbstractVisitor {
 
     private float discount;
 
+    public VipVisitor (String name, int discount) {
+        super();
+    }
+
     public void getDiscount () {
 
     }

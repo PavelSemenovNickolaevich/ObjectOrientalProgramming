@@ -11,6 +11,10 @@ public class Televisor extends ElectronicDevice {
         super(name);
     }
 
+    public Televisor (double price, boolean hasGuarantee, String name, String company) {
+        super(price, hasGuarantee, name, company);
+    }
+
 
     public void selectChannel(){
         System.out.println("Select channel");

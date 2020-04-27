@@ -1,5 +1,6 @@
 package ru.javabegin.training.fastjava2.shop.department;
 
+import ru.javabegin.training.fastjava2.shop.goods.GameConsole;
 import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.EmployeeInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.GoodsInterface;
@@ -26,7 +27,7 @@ public abstract class AbstractDepartment implements DepartmentInterface {
         return employeeList;
     }
 
-    public void setEployeeList (ArrayList<EmployeeInterface> employeeList) {
+    public void setEmployeeList (ArrayList<EmployeeInterface> employeeList) {
         this.employeeList = employeeList;
     }
 
@@ -39,4 +40,13 @@ public abstract class AbstractDepartment implements DepartmentInterface {
         this.goodsList = goodsList;
     }
 
+    public void addGoods (GoodsInterface goods) {
+        goods.setDepartment(this);
+        goodsList.add(goods);
+    }
+
+    public  void addEmploee (EmployeeInterface employee) {
+        employee.setDepartment(this);
+        employeeList.add(employee);
+    }
 }

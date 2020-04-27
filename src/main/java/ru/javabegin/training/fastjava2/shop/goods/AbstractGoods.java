@@ -16,7 +16,12 @@ public abstract class AbstractGoods implements GoodsInterface {
     }
 
     public AbstractGoods() {
-
+    }
+    public AbstractGoods(double price, boolean hasGuarantee, String name, String company) {
+        this.price = price;
+        this.name = name;
+        this.hasGuarantee = hasGuarantee;
+        this.company = company;
     }
 
     public AbstractGoods(String name) {

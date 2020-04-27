@@ -1,5 +1,6 @@
 package ru.javabegin.training.fastjava2.shop.goods;
 
+import ru.javabegin.training.fastjava2.shop.interfaces.DepartmentInterface;
 import ru.javabegin.training.fastjava2.shop.interfaces.ElectronicDeviceInterface;
 
 public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceInterface {
@@ -12,6 +13,10 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
 
     }
 
+    public ElectronicDevice (double price, boolean hasGuarantee, String name, String company) {
+        super(price, hasGuarantee, name, company);
+    }
+
     @Override
     public void on () {
 
@@ -22,4 +27,8 @@ public class ElectronicDevice extends AbstractGoods implements ElectronicDeviceI
 
     }
 
+    @Override
+    public void setDepartment (DepartmentInterface department) {
+
+    }
 }
